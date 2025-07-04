@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="svg" href="globe1.svg">
+    <title>Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,200;1,14..32,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&display=swap" rel="stylesheet">
+
+    <style>
+        @keyframes typewriter {
+            from { 
+                width: 0; 
+                border-right: 3px solid #C53234;
+                margin-left: auto; /* Força o alinhamento à direita */
+            }
+            to { 
+                width: 100%; 
+                border-right: none;
+                margin-left: auto;
+            }
+        }
+
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            width: 0;
+            margin-left: auto; /* Mantém alinhado à direita */
+            text-align: right;
+        }
+
+        .instagram {
+            animation: typewriter 1.2s steps(9, end) forwards;
+        }
+
+        .linkedin {
+            animation: typewriter 1.5s steps(8, end) 1.2s forwards;
+        }
+
+        .mail {
+            animation: typewriter 1s steps(5, end) 2.7s forwards;
+        }
+
+        .cv {
+            animation: typewriter 1.2s steps(2, end) 3.7s forwards;
+        }
+    </style>
+
+
+</head>
+<body class="bg-[#efe6de] text-[#C53234] min-h-screen">
+
+  <div class="flex flex-col h-full p-8">
+    
+    <!-- ÍCONE GLOBO NO TOPO -->
+    <div class="flex justify-start mb-4">
+      <img src="globe.svg" alt="Globe" class="w-12 h-12 hover:text-[#3E000C] transition-colors duration-500">
+    </div>
+
+    <div class="absolute right-8 top-1/2 transform -translate-y-1/2 flex flex-col gap-0 leading-none text-right">
+            <a href="https://www.instagram.com/tiagomarques__/" class="typewriter instagram font-[Inter] font-bold text-[96px] hover:text-[#3E000C] transition-colors duration-500">INSTAGRAM</a>
+            <a href="https://www.linkedin.com/in/tiago-marques-546254264/" class="typewriter linkedin font-[Inter] font-bold text-[96px] hover:text-[#3E000C] transition-colors duration-500">LINKEDIN</a>
+            <a href="mailto:tiagomarques527@gmail.com" class="typewriter mail font-[Inter] font-bold text-[96px] hover:text-[#3E000C] transition-colors duration-500">EMAIL</a>
+            <a href="/documents/Curriculo.pdf" target="_blank" class="typewriter cv font-[Inter] font-bold text-[96px] hover:text-[#3E000C] transition-colors duration-500">CV</a>
+    </div>
+
+    <div class="absolute left-8 top-1/2 transform -translate-y-1/2 flex flex-col gap-0 leading-tight max-w-md">
+      <p class="font-[Inter] font-light text-[26px] tracking-normal">
+        Currently a first-year student of the Master's Degree in Computer Engineering at the University of Coimbra,
+        I combine a deep passion for technology with a creative streak developed through
+        significant experiences in music and artistic projects.
+      </p>
+        
+    </div>
+    
+    <!-- LINKS INFERIORES -->
+    <div class="flex flex-col gap-2 absolute bottom-8 left-8 leading-none">
+      <a href="https://github.com/TMarques01" class="font-[Inter] font-light text-[27px] hover:text-[#3E000C] transition-colors duration-500">Code</a>
+      <a href="/music" class="font-[Inter] font-light text-[27px] hover:text-[#3E000C] transition-colors duration-500">Music</a>
+      <a href="/" class="font-[Inter] font-light text-[27px] hover:text-[#3E000C] transition-colors duration-500">Home</a>
+      <a href="/other" class="font-[Inter] font-light text-[27px] hover:text-[#3E000C] transition-colors duration-500">Other</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

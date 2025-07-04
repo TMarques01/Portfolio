@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="svg" href="globe1.svg">
+    <title>Other</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,200;1,14..32,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-[#efe6de] text-[#C53234] h-screen overflow-hidden">
+
+  <div class="flex flex-col h-full p-8">
+    
+    <!-- ÍCONE GLOBO NO TOPO -->
+    <div class="flex justify-start mb-4">
+      <img src="globe.svg" alt="Globe" class="w-12 h-12 hover:text-[#3E000C] transition-colors duration-500">
+    </div>
+
+    <div class="flex flex-col leading-none items-end w-full flex-1 justify-center mb-8">
+      <div class="text-[280px] font-bold text-right font-[Inter] mb-2"><span th:text="${latestReading.temperature}"></span>ºC</div>
+      <div class="text-[400px] font-bold text-right font-[Inter]"><span th:text="${latestReading.humidity}"></span>%</div>
+      <div class="text-[25px] font-light text-right font-[Inter]"><span th:text="${latestReading.timestamp}"></span> </div>
+    </div>
+    
+    <!-- LINKS INFERIORES -->
+    <div class="flex flex-col gap-2 absolute bottom-8 left-8 leading-none">
+      <a href="https://github.com/TMarques01" class="font-[Inter] font-light text-[27px] hover:text-[#3E000C] transition-colors duration-500">Code</a>
+      <a href="/music" class="font-[Inter] font-light text-[27px] hover:text-[#3E000C] transition-colors duration-500">Music</a>
+      <a href="/information" class="font-[Inter] font-light text-[27px] hover:text-[#3E000C] transition-colors duration-500">Information</a>
+      <a href="/" class="font-[Inter] font-light text-[27px] hover:text-[#3E000C] transition-colors duration-500">Home</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
